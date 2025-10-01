@@ -1,0 +1,27 @@
+cat > .gitignore << 'EOF'
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Django/DB
+db.sqlite3
+*.sqlite3
+
+# Env/Secrets
+.env
+.env.*
+*.env
+
+# VS Code/OS
+.vscode/
+.DS_Store
+
+# Docker
+*.log
+EOF
+
+# Etc
+*.pdf

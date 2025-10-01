@@ -1,0 +1,10 @@
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app           # 로컬 코드를 컨테이너에 마운트(저장·수정 즉시 반영)
+    environment:
+      - DJANGO_SETTINGS_MODULE=config.settings
+    command: python manage.py runserver 0.0.0.0:8000
