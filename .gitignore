@@ -78,3 +78,6 @@ venv.bak/
 
 # DB Backups (스크린샷에 보여서 추가)
 orders_backup/
+
+# 기타
+*.pdf
